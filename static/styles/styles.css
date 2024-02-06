@@ -46,3 +46,15 @@
   width: 60%;
   margin: auto;
 }
+
+.card-text {
+  position: relative;
+  line-height: 1.5; /* Высота строки */
+  overflow: hidden;
+  max-height: calc(1.5em * 6); /* Ограничиваем до 6 строк */
+  transition: max-height 0.3s ease; /* Добавляем плавный переход */
+}
+
+.card-text:hover {
+  max-height: none; /* При наведении мыши устанавливаем максимальную высоту на "none", чтобы показать полный текст */
+}
